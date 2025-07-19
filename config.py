@@ -1,0 +1,3 @@
+DATABASE = 'urls.db'
+SHORT_ID_LENGTH = 6
+DEBUG = True

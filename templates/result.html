@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+{% endblock %}
+{% block content %}
+<h1>Your Shortened URL</h1>
+<p>
+  <!-- The shortened URL and a copy icon, to copy it to the user's clipboard -->
+    <a  target="_blank" href="{{ short_url }}">{{ short_url }}</a>
+    <span class="copy-icon" onclick="copyToClipboard('{{ short_url }}')" title="Copy to clipboard">
+        <i id="copy-icon" class="fas fa-copy"></i>
+    </span>
+</p>
+<!-- The button to shorten another URL. It simply uses a href="/" to redirect back to the main page -->
+<p><a href="/">Shorten another URL</a></p>
+{% endblock %}

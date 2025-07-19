@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- The first three are for a font used in the main page -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <title>URL Shortener</title>
+    <script src="{{ url_for('static', filename='js/utils.js') }}"></script>
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <!-- This is the background image -->
+    <img class="wave-background" src="{{ url_for('static', filename='images/background.svg') }}" alt="Wave Background">
+    <!-- This is the actual content, buttons, etc -->
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
