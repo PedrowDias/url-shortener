@@ -48,7 +48,8 @@ Initialize the database and the app
 ```
 
 Open your browser and go to http://127.0.0.1:5000/ to access the application.
-    ## Screenshots
+
+## Screenshots
 
 ### Homepage
 ![Homepage](screenshots/homepage.png)
