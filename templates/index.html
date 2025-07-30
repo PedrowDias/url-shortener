@@ -3,9 +3,9 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
 {% endblock %}
 {% block content %}
-<h1>URL Shortener</h1>
+<h1 class="url-title">URL<br>Shortener</h1>
 <!-- The input to enter the original URL and the button to shorten it -->
-<form method="POST" onsubmit="return validateForm()">
+<form method="POST" class="form" onsubmit="return validateForm()">
     <input type="text" name="url" id="url" placeholder="Enter URL to shorten">
     <input type="submit" value="Shorten">
 </form>
